@@ -1,0 +1,103 @@
+#root {
+  font-family: hp-font;
+  --primary: #;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+@font-face {
+  font-family: 'hp-font';
+  src: url('HARRYP.TTF') format('truetype');
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.section-container {
+  padding: 5rem 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; 
+}
+
+.section-content {
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-section{
+  flex: 0 0 30%;
+  margin-bottom: 1.5rem;
+}
+
+.card-content {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  height: 60vh;
+  font-family: sans-serif;
+  border-radius: 5px;
+  padding: 1.5rem;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.card-content:hover {
+  background-color: #f18324;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-25px);
+}
+
+.card-content:hover * {
+  color: #fff;
+}
+
+.card-content img {
+  width: 200px;
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.card-title {
+  margin-bottom: 0.5rem;
+}

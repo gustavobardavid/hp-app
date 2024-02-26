@@ -1,0 +1,264 @@
+
+header {
+    border-top:1px solid #ffffff;
+    /* background: linear-gradient(to right, #0E1219, #05003d); */
+    background: linear-gradient(#ea8d8d, #2f00d7); 
+    padding: 20px;
+    color: #fff; 
+}
+
+.content {
+    display: flex;
+    width: 100%;
+}
+
+.logo a {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:large;
+}
+
+.buscar {
+    width: 40%;
+}
+
+.buscar input {
+    width: 69%;
+    position: relative;
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    /* visibility: hidden; */
+    
+}
+
+
+.buscar button {
+    background-color: #0059ff;
+    height:33px;
+    width: 20%;
+    border: none;
+    border-radius: 4px;
+    color:#ffffff;
+    font-size: medium;
+    align-items: center;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+/* .buscar:hover input {
+    visibility: visible;
+} */
+
+.buscar span {
+    font-size: larger;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+.cliente legend {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: large;
+    display: flexbox;
+    justify-content: end;
+    text-align: end;
+    cursor: pointer;
+    
+}
+
+.sobre {
+    font-family: monospace;
+    font: bold;
+    font-size: larger;
+    display: flex;
+    padding: 1px;
+    background-color: transparent;
+    box-sizing: border-box;
+    border-top:1px solid rgb(0, 0, 0);
+    width: 60%;
+}
+
+.sobre ul {
+    list-style-type:none;
+    margin: 10px 10px;
+    padding: 1px;
+}
+
+.sobre li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.sobre li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sobre li span {
+    font-size: small;
+}
+
+.sobre li a:hover {
+    text-decoration: none;
+    color:#0099ff;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .dropdown {
+    translate: 0 -20px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .dropdown > button {
+    width: 170px;
+    height: 60px;
+    border: 0;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 17px;
+    background:transparent;
+  }
+  
+  .dropdown > .content {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    color: #f7f7f7;
+  }
+  
+  .dropdown > .content::after {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    right: 10%;
+    width: 80%;
+    height: 1px;
+    transform: scaleX(0);
+    background: rgb(255 255 255 / 30%);
+    transition: 0.3s;
+  }
+  
+  .dropdown:hover > .content::after {
+    transform: scaleX(1);
+  }
+  
+  .dropdown > .content > span:first-child {
+    font-size: 20px;
+  }
+  
+  .dropdown > .content > span:last-child {
+    margin-left: auto;
+  }
+  
+  .dropdown > .content > span:last-child {
+    transition: 0.3s;
+  }
+  
+  .dropdown:hover > .content > span:last-child {
+    rotate: -180deg;
+  }
+  
+  .dropdown > .menu {
+    position: absolute;
+    z-index: 1;
+    top:6px;
+    left: 50%;
+    display: grid;
+    width: 100%;
+    padding: 70px 0 6px;
+    border-radius: 6px;
+    translate: -50% 0;
+    visibility: hidden;
+    opacity: 0;
+    scale: 0.85;
+    background:#5c3ccd;
+    /* background: linear-gradient(#ea8d8d, #a890fe); */
+    transition: 0.3s;
+  }
+  
+  .dropdown:hover > .menu {
+    visibility: visible;
+    opacity: 1;
+    scale: 1;
+  }
+  
+  .dropdown > .menu > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #f7f7f7;
+    font-size: 14px;
+    padding: 0 24px;
+  }
+  
+  .dropdown > .menu > a:hover {
+    background: rgb(0 0 0 / 10%);
+  }
+  
+  .dropdown > .menu > a > span {
+    font-size: 20px;
+  }
+   
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 325px;
+    height: 450px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, -2);
+    cursor: pointer;
+    animation: pulsePoster 2s ease-in-out infinite;
+}
+
+
+@keyframes pulsePoster {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1);
+    }
+} 
+
